@@ -1,4 +1,6 @@
+using Ecom.API.Mapping;
 using Ecom.Infrastructure;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Ecom.API
 {
@@ -15,6 +17,10 @@ namespace Ecom.API
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.inftrastructureConfiguration(builder.Configuration);
+            builder.Services.AddAutoMapper(cfg =>
+            {
+                cfg.AddMaps(typeof(Program).Assembly);
+            });
 
             var app = builder.Build();
 
