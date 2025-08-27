@@ -12,11 +12,11 @@
             return statusCode switch
             {
                 200 => "Done",
-                400 => "Bad Reuest",
+                400 => "Bad Request",
                 404 => "not Found",
                 401 => "Un Auth",
                 500 => "Server Error",
-                _ => null
+                _ => "no specified error message"
             };
         }
 

@@ -33,6 +33,8 @@ namespace Ecom.API
 
             app.UseHttpsRedirection();
 
+            app.UseStaticFiles();
+
             app.UseAuthorization();
 
 
