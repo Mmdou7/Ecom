@@ -13,8 +13,8 @@
             {
                 200 => "Done",
                 400 => "Bad Request",
-                404 => "not Found",
                 401 => "Un Auth",
+                404 => "not Found",
                 500 => "Server Error",
                 _ => "no specified error message"
             };
